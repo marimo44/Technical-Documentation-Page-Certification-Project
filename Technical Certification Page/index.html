@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+        <title>Technical Documentation Page</title>
+    </head>
+    <body>
+        <main id="main-doc">
+            <nav id="navbar">
+                <header>
+                    <h2>HTML Forms and Attributes</h2>
+                </header>
+
+                <!--   FOR NAVIGATION   -->
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#HTML_Forms">HTML Forms</a>
+                    </li>                    
+
+                    <li>
+                        <a class="nav-link" href="#The_form_Element">The form Element</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#The_input_Element">The input Element</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#Text_Fields">Text Fields</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#The_label_Element">The label Element</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#Radio_Buttons">Radio Buttons</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#Checkboxes">Checkboxes</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#The_Submit_Button">The Submit Button</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#The_Name_Attribute_for_input">The Name Attribute for input</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#HTML_Form_Attributes">HTML Form Attributes</a>
+                    </li>
+                    
+                    <li>
+                        <a class="nav-link" href="#The_Action_Attribute">The Action Attribute</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#The_Target_Attribute">The Target Attribute</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#The_Method_Attribute">The Method Attribute</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#The_Autocomplete_Attribute">The Autocomplete Attribute</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="#The_Novalidate_Attribute">The Novalidate Attribute</a>
+                    </li>                  
+                </ul>
+            </nav>
+
+            <!--   FOR ARTICLES   -->
+            <div class="desc-section">
+                <section class="main-section" id="HTML_Forms">
+                    <header>
+                        <h1>HTML Forms</h1>
+                    </header> 
+                    <article>               
+                        <p>
+                        An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+                        </p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <form action="/action_page.php">
+                                <label>First name:</label><br>
+                                <input type="text" placeholder="John"><br>
+                                <label>Last name:</label><br>
+                                <input type="text" placeholder="Doe"><br><br>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </article>
+                </section>
+    
+                <hr>
+    
+                <section class="main-section" id="The_form_Element">
+                    <header>
+                        <h2>The form Element</h2>
+                    </header>
+                    <article>                      
+                        <p>The HTML <code><span class="red">&lt;form></span></code> element is used to create an HTML form for user input:</p>
+                        <code class="sample">
+                        &lt;form> <br>
+                        .<br>
+                        form elements<br>
+                        .<br>
+                        &lt;form>                                           
+                        </code>
+                        <p>
+                        The <code><span class="red">&lt;form></span></code> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+                        </p>                        
+                    </article>
+                </section>    
+    
+                <hr>
+    
+                <section class="main-section" id="The_input_Element">
+                    <header>
+                        <h2>The input Element</h2>
+                    </header>
+    
+                    <article>            
+                        <p>The HTML <code><span class="red">&lt;input></span></code> element is the most used form element.</p>
+                        <p>An <code><span class="red">&lt;input></span></code> element can be displayed in many ways, depending on the <span class="red">type</span> attribute.</p>
+                        <p>Here are some examples:</p>
+    
+                        <table>
+                            <thead >
+                                <tr class="title">
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>                        
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&lt;input type="text"&gt;</td>
+                                    <td>Displays a single-line text input field</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;input type="radio"&gt;</td>
+                                    <td>Displays a radio button (for selecting one of many choices)</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;input type="checkbox"&gt;</td>
+                                    <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;input type="submit"&gt;</td>
+                                    <td>Displays a submit button (for submitting the form)</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;input type="button"&gt;</td>
+                                    <td>Displays a clickable button</td>
+                                </tr>
+                            </tbody>
+                        </table>                               
+                        
+                    </article>
+            
+                </section>
+    
+                <hr>
+                
+                <section class="main-section" id="Text_Fields">
+                    <header>
+                        <h2>Text Fields</h2>
+                    </header>
+                    <article>
+                        <p>The <span class="red"><code>&lt;input type="text"></code></span> defines a single-line input field for text input.</p>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>A form with input fields for text:</p>
+                            <code class="sample">
+                                &lt;form&gt;
+                                &lt;label for="fname">First name:&lt;/label><br>
+                                &lt;input type="text" id="fname" name="fname"><br>
+                                &lt;label for="lname">Last name:&lt;/label><br>
+                                &lt;input type="text" id="lname" name="lname">
+                                &lt;/form>
+                            </code>
+                        </div>
+                        <p>This is how the HTML code above will be displayed in a browser:</p>
+                        <form>
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname">
+                        </form>
+    
+                        <div class="yellow-bg">
+                            Note: The form itself is not visible. Also note that the default width of an input field is 20 characters.
+                        </div>
+                    </article>            
+                </section>
+                
+                <hr>
+    
+                <section class="main-section" id="The_label_Element">
+                    <header>
+                        <h2>The label Element</h2>
+                    </header>
+                    <article>
+                        <p>Notice the use of the <code><span class="red">&lt;label></span></code> element in the example above.</p>
+                        <p>The <code><span class="red">&lt;label></span></code> tag defines a label for many form elements.</p>
+                        <p>The <code><span class="red">&lt;label></span></code> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.</p>
+                        <p>The <code><span class="red">&lt;label></span></code> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the &lt;label> element, it toggles the radio button/checkbox.</p>
+                        <p>The <code><span class="red">&lt;label></span></code> attribute of the <code><span class="red">&lt;label></span></code> tag should be equal to the id attribute of the <code><span class="red">&lt;input></span></code> element to bind them together.</p>
+                    </article>   
+                       
+                </section>
+    
+                <hr>
+    
+                <section class="main-section" id="Radio_Buttons">
+                    <header>
+                        <h2>Radio Buttons</h2>
+                    </header>
+                    <article>
+                        <p>The <span class="red"><code>&lt;input type="radio"></code></span> defines a radio button.</p>
+                        <p>Radio buttons let a user select ONE of a limited number of choices.</p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>A form with radio buttons:</p>                            
+                            <code>
+                                &lt;p>Choose your favorite Web language:&lt;/p><br>
+                                <br>
+                                &lt;form><br>
+                                &lt;input type="radio" id="html" name="fav_language" value="HTML"><br>
+                                &lt;label for="html">HTML&lt;/label&lt;br><br>
+                                &lt;input type="radio" id="css" name="fav_language" value="CSS"><br>
+                                &lt;label for="css">CSS&lt;/label>&lt;br><br>
+                                &lt;input type="radio" id="javascript" name="fav_language" value="JavaScript"><br>
+                                &lt;label for="javascript">JavaScript&lt;/label><br>
+                                &lt;/form>
+                            </code>             
+                        </div>
+                            
+                        <p>This is how the HTML code above will be displayed in a browser:</p>
+                        <p>Choose your favorite Web language:</p>
+    
+                        <form>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">HTML</label><br>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">CSS</label><br>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">JavaScript</label>
+                        </form>
+                    </article>                
+                </section>
+    
+                <hr>
+                
+                <section class="main-section" id="Checkboxes">
+                    <header>
+                        <h2>Checkboxes</h2>
+                    </header>
+                    <article>
+                        <p>The <span class="red"><code>&lt;input type="checkbox"></code></span> defines a <span class="bold">checkbox</span>.</p>
+                        <p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>A form with checkboxes:</p>
+                            <code>
+                                &lt;form><br>
+                                    &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><br>
+                                    &lt;label for="vehicle1"> I have a bike &lt;/label> &lt;br><br>
+                                    &lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car"><br>
+                                    &lt;label for="vehicle2"> I have a car &lt;/label> &lt;br><br>
+                                    &lt;input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"><br>
+                                    &lt;label for="vehicle3"> I have a boat &lt;/label><br>
+                                &lt;/form>
+                            </code>              
+                        </div>
+                        <p>This is how the HTML code above will be displayed in a browser:</p>
+                        <form>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1"> I have a bike</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2"> I have a car</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3"> I have a boat</label>
+                        </form>
+                    </article>
+                </section>
+    
+                <hr>
+    
+                <section class="main-section" id="The_Submit_Button">
+                    <header>
+                        <h2>The Submit Button</h2>
+                    </header>
+                    <article>
+                        <p>The <span class="red"><code>&lt;input type="submit"></code></span> defines a button for submitting the form data to a form-handler.</p>
+                        <p>The form-handler is typically a file on the server with a script for processing input data.</p>
+                        <p>The form-handler is specified in the form's <span class="red">action</span> attribute.</p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>A form with a submit button:</p>
+                            <code>
+                                &lt;form action="/action_page.php"><br>
+                                  &lt;label for="fname">First name:&lt;/label>&lt;br><br>
+                                  &lt;input type="text" id="fname" name="fname" value="John">&lt;br><br>
+                                  &lt;label for="lname">Last name:&lt;/label>&lt;br><br>
+                                  &lt;input type="text" id="lname" name="lname" value="Doe">&lt;br>&lt;br><br>
+                                  &lt;input type="submit" value="Submit"><br>
+                                &lt;/form>
+                            </code>
+                        </div>
+    
+                        <p>This is how the HTML code above will be displayed in a browser:</p>
+                        <form action="/action_page.php">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value="John"><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                            <input type="submit" value="Submit">
+                          </form>
+                    </article>                                 
+                </section>        
+    
+                <hr>
+    
+                <section class="main-section" id="The_Name_Attribute_for_input">
+                    <header>
+                        <h2>The Name Attribute for input</h2>
+                    </header>
+                    <article>
+                        <p>Notice that each input field must have a <span class="red"><code>name</code></span> attribute to be submitted.</p>
+                        <p>If the <span class="red"><code>name</code></span> attribute is omitted, the value of the input field will not be sent at all.</p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>This example will not submit the value of the "First name" input field: </p>
+                            <code>
+                                &lt;form action="/action_page.php"><br>
+                                  &lt;label for="fname">First name:&lt;/label>&lt;br><br>
+                                  &lt;input type="text" id="fname" value="John">&lt;br>&lt;br><br>
+                                  &lt;input type="submit" value="Submit"><br>
+                                &lt;/form>
+                            </code>
+                        </div>
+                    </article>                      
+                </section>
+    
+                <hr>
+    
+                <section class="main-section" id="HTML_Form_Attributes">
+                    <header>
+                        <h1>HTML Form Attributes</h1>
+                    </header>
+                    <article>
+                        <p>This chapter describes the different attributes for the HTML <code><span class="red">&lt;form></span></code> element.</p>
+                    </article>
+                </section>
+                
+                <hr>
+    
+                <section class="main-section" id="The_Action_Attribute">
+                    <header>
+                        <h2>The Action Attribute</h2>
+                    </header>
+                    <article>
+                        <p>The <code><span class="red">action</span></code> attribute defines the action to be performed when the form is submitted.</p>
+                        <p>Usually, the form data is sent to a file on the server when the user clicks on the submit button.</p>
+                        <p>In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:</p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>On submit, send form data to "action_page.php":</p>
+                            <code>
+                                &lt;form action="/action_page.php"><br>
+                                &lt;label for="fname">First name:&lt;/label>&lt;br><br>
+                                &lt;input type="text" id="fname" name="fname" value="John">&lt;br><br>
+                                &lt;label for="lname">Last name:&lt;/label>&lt;br><br>
+                                &lt;input type="text" id="lname" name="lname" value="Doe">&lt;br>&lt;br><br>
+                                &lt;input type="submit" value="Submit"><br>
+                                &lt;/form>
+                            </code>
+                        </div>
+                        <p><span class="bold">Tip:</span> If the <code><span class="red">action</span></code> attribute is omitted, the action is set to the current page.</p>
+                    </article>
+                </section>
+    
+                <hr>
+    
+                <section class="main-section" id="The_Target_Attribute">
+                    <header>
+                        <h2>The Target Attribute</h2>
+                    </header>
+                    <article>
+                        <p>The <code><span class="red">target</span></code> attribute specifies where to display the response that is received after submitting the form.</p>
+                        <p>The <code><span class="red">target</span></code> attribute can have one of the following values:</p>
+    
+                        <table>
+                            <thead>
+                                <tr class="title">
+                                    <th>Value</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>_blank</td>
+                                    <td>The response is displayed in a new window or tab</td>
+                                </tr>
+                                <tr>
+                                    <td>_self</td>
+                                    <td>The response is displayed in the current window</td>
+                                </tr>
+                                <tr>
+                                    <td>_parent</td>
+                                    <td>The response is displayed in the parent frame</td>
+                                </tr>
+                                <tr>
+                                    <td>_top</td>
+                                    <td>The response is displayed in the full body of the window</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="italic">framename</span></td>
+                                    <td>The response is displayed in a named iframe</td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+                        <p>The default value is <code><span class="red">_self</span></code> which means that the response will open in the current window.</p>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>Here, the submitted result will open in a new browser tab:</p>
+                            <code>
+                                &lt;form action="/action_page.php" target="_blank">
+                            </code>
+                        </div>
+    
+                    </article>
+                </section>            
+                            
+                <hr>
+    
+                <section class="main-section" id="The_Method_Attribute">
+                    <header>
+                        <h2>The Method Attribute</h2>
+                    </header>
+                    <article>
+                        <p>The <code><span class="red">method</span></code> attribute specifies the HTTP method to be used when submitting the form data.</p>
+                        <p>The form-data can be sent as URL variables (with <code><span class="red">method="get"</span></code>) or as HTTP post transaction (with <code><span class="red">method="post"</span></code>).</p>
+                        <p>The default HTTP method when submitting form data is GET.</p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>This example uses the GET method when submitting the form data:</p>
+                            <code>
+                                &lt;form action="/action_page.php" method="get">
+                            </code>
+                        </div>
+                        <br>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>This example uses the POST method when submitting the form data:</p>
+                            <code>
+                                &lt;form action="/action_page.php" method="post">
+                            </code>
+                        </div>
+    
+                        <p>
+                            <h4>Notes on GET:</h4>
+                            <ul>
+                                <li>Appends the form data to the URL, in name/value pairs</li>
+                                <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+                                <li>The length of a URL is limited (2048 characters)</li>
+                                <li>Useful for form submissions where a user wants to bookmark the result</li>
+                                <li>GET is good for non-secure data, like query strings in Google</li>
+                            </ul>
+    
+                            <h4>Notes on POST:</h4>
+                            <ul>
+                                <li>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li>
+                                <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+                                <li>Form submissions with POST cannot be bookmarked</li>
+                            </ul>
+                        </p>
+    
+                        <div class="yellow-bg">
+                            <span class="bold">Tip:</span> Always use POST if the form data contains sensitive or personal information!
+                        </div>
+                    </article>
+                </section>            
+                            
+                <hr>
+    
+                <section class="main-section" id="The_Autocomplete_Attribute">
+                    <header>
+                        <h2>The Autocomplete Attribute</h2>
+                    </header>
+                    <article>
+                        <p>The <code><span class="red">autocomplete</span></code> attribute specifies whether a form should have autocomplete on or off.</p>
+                        <p>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <p>A form with autocomplete on:</p>
+                            <code>
+                                &lt;form action="/action_page.php" autocomplete="on">
+                            </code>
+                        </div>
+                    </article>                      
+                </section>
+    
+                <hr>
+    
+                <section class="main-section" id="The_Novalidate_Attribute">
+                    <header>
+                        <h2>The Novalidate Attribute</h2>
+                    </header>
+                    <article>
+                        <p>The <code><span class="red">novalidate</span></code> attribute is a boolean attribute.</p>
+                        <p>When present, it specifies that the form-data (input) should not be validated when submitted.</p>
+    
+                        <div class="example">
+                            <h3>Example</h3>
+                            <code>
+                                &lt;form action="/action_page.php" novalidate>
+                            </code>
+                        </div>
+                    </article>                                      
+                </section>
+            </div>                
+        </main>
+    </body>
+</html>
